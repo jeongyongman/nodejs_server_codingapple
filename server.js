@@ -17,6 +17,12 @@ app.get('/beauty', function (req, res) {
   res.status(200);
   res.redirect('https://shopping.naver.com/beauty/home')
 });
+
+app.get('/', function (req, res) {
+  res.send('메인페이지 입니다.')
+  // res.status(200);
+  // res.redirect('https://shopping.naver.com/window/main/pet-group?unionCategory=DOG')
+});
 // app.get('/sound/:name', function (req, res) {
 //   // const p = req.params
 //   // console.log(p.name)

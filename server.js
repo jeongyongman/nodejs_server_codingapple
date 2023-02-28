@@ -19,7 +19,7 @@ app.get('/beauty', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-  res.send('메인페이지 입니다.')
+  res.sendFile(__dirname + '/index.html')
   // res.status(200);
   // res.redirect('https://shopping.naver.com/window/main/pet-group?unionCategory=DOG')
 });

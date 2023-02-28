@@ -7,11 +7,15 @@ app.listen(port, () => {
 });
 
 app.get('/pet', function (req, res) {
-  res.send('펫용품 쇼핑할 수 있는 페이지입니다.')
+  // res.send('펫용품 쇼핑할 수 있는 페이지입니다.')
+  res.status(200);
+  res.redirect('https://shopping.naver.com/window/main/pet-group?unionCategory=DOG')
 });
 
 app.get('/beauty', function (req, res) {
-  res.send('뷰티용품 쇼핑할 수 있는 페이지입니다.')
+  // res.send('뷰티용품 쇼핑할 수 있는 페이지입니다.')
+  res.status(200);
+  res.redirect('https://shopping.naver.com/beauty/home')
 });
 // app.get('/sound/:name', function (req, res) {
 //   // const p = req.params
